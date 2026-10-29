@@ -1,0 +1,9 @@
+# dsh-lockbox bundle patch
+#
+# Insert the Lockbox host + client plugin into the DSH configuration tree.
+# Keep the id line free of trailing comments: the plugin-market preflight
+# requires the value to be followed directly by a newline.
+- insert:
+    - id: dsh-lockbox
+      name: 'dsh-lockbox'
+      config: {}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="DSH Lockbox">
+  <defs>
+    <linearGradient id="g" x1="10" y1="6" x2="54" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F7CFF"/>
+      <stop offset="1" stop-color="#1B3FA8"/>
+    </linearGradient>
+    <linearGradient id="s" x1="22" y1="26" x2="42" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D9E4FF"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#g)" d="M32 4.5 55 13v17.2c0 13.8-9.1 24.9-23 29.3C18.1 55.1 9 44 9 30.2V13L32 4.5Z"/>
+  <path fill="none" stroke="#9DB8FF" stroke-opacity=".55" stroke-width="1.5" d="M32 8.2 51.5 15v15.2c0 11.8-7.5 21.4-19.5 25.5C20.5 51.6 13 42 13 30.2V15L32 8.2Z"/>
+  <rect x="21.5" y="28" width="21" height="17" rx="4.5" fill="url(#s)"/>
+  <path d="M26 28v-3.4a6 6 0 0 1 12 0V28" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="32" cy="35.6" r="2.5" fill="#1B3FA8"/>
+  <path d="M32 37.6v3.6" stroke="#1B3FA8" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

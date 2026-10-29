@@ -1,0 +1,60 @@
+{
+  "name": "dsh-lockbox",
+  "version": "1.0.2",
+  "private": true,
+  "description": "启动密码锁、邮箱验证码找回与一键加密模式，为 DeepSeek Harness 增加一道本地身份门禁。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "lib/*.js",
+    "bin/*.mjs",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node --check index.js && node --check client.js && node --check lib/store.js && node --check lib/smtp.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "lockbox",
+    "password",
+    "security",
+    "encryption-mode"
+  ],
+  "license": "MIT",
+  "icon": "icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.0-rc.1": "compatible",
+        "0.2.0-rc.2": "compatible",
+        "0.2.1-rc.2": "compatible",
+        "0.2.1-rc.3": "compatible"
+      }
+    }
+  }
+}
